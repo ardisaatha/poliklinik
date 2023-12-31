@@ -1,5 +1,4 @@
-# Nama : Amirul Atha Ardisa
-# NIM : A11.2020.13055
+## Amirul Atha Ardisa
 
 # **Web Poliklinik**
 
