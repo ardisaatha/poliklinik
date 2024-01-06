@@ -1,19 +1,15 @@
 ## Amirul Atha Ardisa - A11.2020.13055
 
-## **Web Poliklinik**
+## **username dokter = password dokter**
 
-## **Login Sebagai Admin**
+contoh :
 ```
-    username : Admin
-    password : admin
+username : coba
+password : coba
 ```
----
 
-## **Login Sebagai Dokter**
-**username dokter = password dokter**
-
-*contoh :*
+## **Admin**
 ```
-    username : coba
-    password : coba
+username : Admin
+password : admin
 ```
