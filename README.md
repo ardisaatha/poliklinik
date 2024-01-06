@@ -1,15 +1,15 @@
-## Amirul Atha Ardisa - A11.2020.13055
+## Admin
 
-## **username dokter = password dokter**
-
-contoh :
-```
-username : coba
-password : coba
-```
-
-## **Admin**
+username dan passwor admin
 ```
 username : Admin
 password : admin
+```
+
+## Dokter
+
+username dokter = password dokter
+```
+username : coba
+password : coba
 ```
