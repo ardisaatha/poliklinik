@@ -1,20 +1,15 @@
-# Nama : Amirul Atha Ardisa
-# NIM : A11.2020.13055
+## Admin
 
-# **Web Poliklinik**
-
-## **Login Sebagai Admin**
+username dan passwor admin
 ```
-    username : Admin
-    password : admin
+username : Admin
+password : admin
 ```
----
 
-## **Login Sebagai Dokter**
-**username dokter = password dokter**
+## Dokter
 
-*contoh :*
+username dokter = password dokter
 ```
-    username : coba
-    password : coba
+username : coba
+password : coba
 ```
