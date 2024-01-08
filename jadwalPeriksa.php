@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <?php
-    session_start();
-    $id_dokter = $_SESSION['id'];
-    $username = $_SESSION['username'];
-    $id_poli = $_SESSION['id_poli'];
+session_start();
+$id_dokter = $_SESSION['id'];
+$username = $_SESSION['username'];
+$id_poli = $_SESSION['id_poli'];
 
-    if ($username == "") {
-        header("location:login.php");
-    }
+if ($username == "") {
+    header("location:login.php");
+}
 ?>
 <!--
 This is a starter template page. Use this page to start your new project from
@@ -21,8 +21,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <title>Poliklinik</title>
 
     <!-- Google Font: Source Sans Pro -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="assets/plugins/fontawesome-free/css/all.min.css">
     <!-- Theme style -->
@@ -33,15 +32,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <div class="wrapper">
 
         <!-- Navbar -->
-        <?php include ('components/navbar.php') ?>
+        <?php include('components/navbar.php') ?>
         <!-- /.navbar -->
 
         <!-- Main Sidebar Container -->
-        <?php include ('components/sidebar.php') ?>
+        <?php include('components/sidebar.php') ?>
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
-            <?php include ('pages/jadwalPeriksa/index.php') ?>
+            <?php include('pages/jadwalPeriksa/index.php') ?>
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
@@ -68,6 +67,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE App -->
     <script src="assets/dist/js/adminlte.min.js"></script>
+    <script>
+        function updateRadioValues(radioButton) {
+            const selectedValue = radioButton.value;
+            const allRadioButtons = document.getElementsByName("selected_jadwal");
+
+            // Set the value of the clicked radio button to 1, and others to 0
+            allRadioButtons.forEach(function(radio) {
+                radio.value = (radio === radioButton) ? 1 : 0;
+            });
+        }
+    </script>
+
 </body>
 
 </html>
